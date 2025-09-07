@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Segmentation Result</title>
+    <link rel="stylesheet" type="text/css" href="/static/result.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Segmentation Result</h2>
+
+        <div class="result-box">
+            <p><strong>Gender:</strong> {{ gender }}</p>
+            <p><strong>Age:</strong> {{ age }}</p>
+            <p><strong>Annual Income:</strong> {{ income }} k$</p>
+            <p><strong>Spending Score:</strong> {{ score }}</p>
+            <p class="cluster"><strong>Predicted Cluster:</strong> Cluster {{ cluster }}</p>
+            <p><strong>Silhouette Score:</strong> {{ silhouette }}</p>
+        </div>
+
+        <a href="/" class="back-button">Try Another</a>
+    </div>
+</body>
+</html>
